@@ -1,0 +1,18 @@
+
+
+@font-face {
+    font-family: 'Timeless';
+    src: url('../font/timeless-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Timeless';
+    src: url('../font/timeless-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
