@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: 'Typew';
+  src: url('../font/typewcond_bold.otf')  format('opentype'), url('../font/typewcond_demi.otf')  format('opentype'), url('../font/typewcond_regular.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
