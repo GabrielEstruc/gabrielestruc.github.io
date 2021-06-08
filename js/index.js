@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 	$('.btn2').click(function() {
 		$('.texto2').toggleClass('responsivo');
+		$('.btn2').toggleClass('sortUp');
 
 	});
 
@@ -16,6 +17,7 @@ $(document).ready(function(){
 
 	$('.btn4').click(function() {
 		$('.texto4').toggleClass('responsivo');
+		$('.btn4').toggleClass('sortUp');
 
 	});
 
