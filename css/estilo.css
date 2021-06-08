@@ -413,6 +413,10 @@ footer img{
 	.responsivo{
 		display: block;
 	}
+	
+	.sortUp{
+		transform: rotate(180deg);
+	}
 
 .banner, .logo{
 	display: none;
