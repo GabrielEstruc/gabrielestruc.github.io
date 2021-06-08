@@ -54,6 +54,11 @@ header img{
 
 }
 
+.monkey:hover{
+	border-color: #fff!important;
+
+}
+
 .fixo{
 	position: fixed;
 	
