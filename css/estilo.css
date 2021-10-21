@@ -135,21 +135,21 @@ h1{
 .perfil1{
 	background-image: url(../imagens/perfil1.jpg);
 	background-size: cover;
-	height: 300px;
+	height: 200px;
 	background-position: center;
 }
 
 .perfil2{
 	background-image: url(../imagens/perfil2.jpg);
 	background-size: cover;
-	height: 300px;
+	height: 200px;
 	background-position: center;
 }
 
 .perfil3{
 	background-image: url(../imagens/perfil3.png);
 	background-size: cover;
-	height: 300px;
+	height: 200px;
 
 }
 
