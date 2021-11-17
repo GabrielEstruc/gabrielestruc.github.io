@@ -509,7 +509,11 @@ footer img{
 		text-align: left;
 		color: #000;
 		margin: 5px !important;
-		font-size: 15px !important;
+		font-size: 12px !important;
+	}
+	.imagem6{
+		background-image: none;
+		height: 0px;
 	}
 
 	.imagensresp{
