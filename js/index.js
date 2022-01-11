@@ -35,7 +35,7 @@ $(document).ready(function(){
 		$('.menu').toggleClass('responsivo');
 	});
 
-		$('.menu').click(function() {
+	$('.menu').click(function() {
 		$('.menu').toggleClass('responsivo');
 	});
 
@@ -43,13 +43,35 @@ $(document).ready(function(){
 
 var nav = $('.solto');
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            nav.addClass("fixo");
-        } else {
-            nav.removeClass("fixo");
-        }
-    });
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 200) {
+		nav.addClass("fixo");
+	} else {
+		nav.removeClass("fixo");
+	}
+});
+
+var i = 0;
+		var p = 0;
+		setInterval(function mudar(){
+			i++;
+			if (i <= 100){
+				p++;
+				document.getElementById('cor').style = 'background: linear-gradient(' + (i*1.8) + 'deg, rgb(131,58,180)' + p + '%, rgb(253,29,29)' + (100 + p) + '%)';
+				document.getElementById('cor2').style = 'background: linear-gradient(' + (i*1.8) + 'deg, rgb(131,58,180)' + p + '%, rgb(253,29,29)' + (100 + p) + '%)';
+			} else if (i <= 200) {
+				p--;
+				document.getElementById('cor').style = 'background: linear-gradient(' + (i*1.8) + 'deg, rgb(131,58,180)' + p + '%, rgb(253,29,29)' + (100 + p) + '%)';
+				document.getElementById('cor2').style = 'background: linear-gradient(' + (i*1.8) + 'deg, rgb(131,58,180)' + p + '%, rgb(253,29,29)' + (100 + p) + '%)';
+			} else {
+				return i = 0;
+			}
+		},100);
+
+
+
+
+
 
 
 
