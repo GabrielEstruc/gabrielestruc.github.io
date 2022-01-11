@@ -4,6 +4,12 @@
 	font-family: verdana, calibri, arial;
 }
 
+#cor, #cor2{
+	background: linear-gradient(34deg, #411970 0%, #c50076 100%);
+	 width: 100%;
+	 padding-bottom: 50px;
+}
+
 .principal{
 	max-width: 1705px;
 	height: auto;
@@ -396,6 +402,11 @@ footer img{
 	height: 200px !important;
 
 }
+#graf10{
+
+  height: 300px !important;
+}
+
 
 /*para smartphone*/
 @media (max-width: 1200px){
@@ -408,6 +419,10 @@ footer img{
 		width: 250px !important;
 	}
 
+	.monkey:hover{
+	width: 250px !important;
+}
+
 	.slide1{
 		width: 95%;
 		height: auto;
@@ -415,6 +430,10 @@ footer img{
 		max-width: 100%;
 	}
 
+	.imagem6{
+		background-image: none;
+		height: 0px;
+	}
 	
 	.responsivo{
 		display: block;
@@ -453,6 +472,12 @@ footer img{
 		font-size: 15px !important;
 
 	}
+
+	#analise img{
+	width: 100% !important;
+
+}
+
 
 
 	form{
@@ -510,10 +535,6 @@ footer img{
 		color: #000;
 		margin: 5px !important;
 		font-size: 12px !important;
-	}
-	.imagem6{
-		background-image: none;
-		height: 0px;
 	}
 
 	.imagensresp{
@@ -594,6 +615,9 @@ footer img{
 	}
 
 }
+
+
+
 
 
 
