@@ -25,14 +25,17 @@ $(document).ready(function(){
 		$('.texto5').toggleClass('responsivo');
 
 	});
+	$('.btn6').click(function() {
+		$('.menu').toggleClass('responsivo');
+	});
 
 	$('.btn7').click(function() {
 		$('.texto6').toggleClass('responsivo');
 
 	});
-
-	$('.btn6').click(function() {
-		$('.menu').toggleClass('responsivo');
+	
+		$('.btn8').click(function() {
+		$('.texto8').toggleClass('responsivo');
 	});
 
 	$('.menu').click(function() {
