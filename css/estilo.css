@@ -169,7 +169,7 @@ h1{
 
 
 
-.texto1, .texto2, .texto3, .texto4, .texto5, .texto6,{
+.texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7, .texto8{
 	text-align: center;
 	height: 100%;
 	width: 50%;
@@ -374,7 +374,7 @@ footer img{
 
 }
 
-.btn1, .btn2, .btn3, .btn4, .btn5, .btn6:focus{
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8:focus{
 	outline: 0px !important;
 }
 
@@ -415,7 +415,7 @@ footer img{
 	*{
 		padding: 1px;
 	}
-	.texto1, .texto2, .texto3, .texto4, .texto5, .menu{
+	.texto1, .texto2, .texto3, .texto4, .texto5, .texto7, .menu{
 		display: none;
 		width: auto;
 	}
