@@ -35,7 +35,8 @@ $(document).ready(function(){
 	});
 	
 		$('.btn8').click(function() {
-		$('.texto8').toggleClass('responsivo');
+                $('.texto8').toggleClass('responsivo');
+		$('.btn8').toggleClass('sortUp');
 	});
 
 	$('.menu').click(function() {
