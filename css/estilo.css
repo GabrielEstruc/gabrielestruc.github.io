@@ -374,7 +374,7 @@ footer img{
 
 }
 
-.btn1, .btn2, .btn3, .btn4, .btn5, .btn6:focus{
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn8:focus{
 	outline: 0px !important;
 }
 
