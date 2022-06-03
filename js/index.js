@@ -83,7 +83,7 @@ var i = 0;
       if ((mes >= 6 && dia >= 11) || mes > 6){
       	document.getElementById('idade').innerHTML = 'Gabriel Estruc, ' + idade + '<br>Designer de Produto';
       } else {
-      	document.getElementById('idade').innerHTML =  'Gabriel Estruc, ' + (idade - 1) + '<br>Designer de Produto';
+      	document.getElementById('idade').innerHTML =  'Gabriel Estruc, ' + idade - 1 + '<br>Designer de Produto';
       }
       
     }
