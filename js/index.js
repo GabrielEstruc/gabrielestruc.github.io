@@ -73,6 +73,22 @@ var i = 0;
 		},100);
 
 
+      function atualizarIdade(){
+      const data = 1994;
+      var dataAtual = new Date();
+      var ano = dataAtual.getFullYear();
+      var mes = dataAtual.getMonth() + 1;
+      var dia = dataAtual.getDate();
+      idade = ano - data;
+      if ((mes >= 6 && dia >= 11) || mes > 6){
+      	document.getElementById('idade').innerHTML = idade;
+      } else {
+      	document.getElementById('idade').innerHTML = idade - 1;
+      }
+      
+    }
+
+
 
 
 
