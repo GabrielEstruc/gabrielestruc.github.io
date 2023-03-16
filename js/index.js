@@ -45,16 +45,6 @@ $(document).ready(function(){
 
 });
 
-var nav = $('.solto');
-
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 200) {
-		nav.addClass("fixo");
-	} else {
-		nav.removeClass("fixo");
-	}
-});
-
 var i = 0;
 		var p = 0;
 		setInterval(function mudar(){
