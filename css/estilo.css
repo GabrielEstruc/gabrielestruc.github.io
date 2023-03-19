@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: bbc reith sans, verdana, calibri, arial;
+	font-family: open sans, calibri, verdana;
 }
 
 #cor, #cor2{
@@ -19,42 +19,26 @@
 	border-right: 2px solid #999;
 }
 
-html{
-	scroll-behavior: smooth;
-}
-
-
 header{
 	width: 100%;
 	height: auto;
-	background-color: #fff !important;
+	background-color: #000 !important;
 	text-align: center;
-}
-
-header img{
-	color: #000;
+	z-index: 100;
 }
 
 nav a{
 	font-size: 15px !important;
-	text-transform: uppercase;
 	text-align: left;
 	text-decoration: none !important;
-	color: #333 !important;
+	color: #fff !important;
 	border-bottom: 1px solid transparent;
-	font-family: bbc reith serif !important;
 	font-weight: 600;
 	padding: 10px 50px !important;
 }
 
 nav a:hover{
 	color: #A7A9AC !important;
-
-}
-
-.monkey:hover{
-	width: 390px !important;
-	margin: 3px 5px;
 
 }
 
@@ -99,6 +83,7 @@ nav a:hover{
 	display: flex;
 	margin: 30px auto;
 	width: 80%;
+	margin-top: 50px auto;
 }
 
 .categoria2{
@@ -161,11 +146,10 @@ h1{
 
 
 .texto1, .texto2, .texto3, .texto4, .texto5, .texto6,{
-	text-align: center;
+	text-align: justify;
 	height: 100%;
 	width: 50%;
 	margin: 10px !important;
-
 }
 
 .imagens{
@@ -184,7 +168,6 @@ h1{
 
 .site{
 	font-size: 25px;
-	font-family: bbc reith serif;
 	text-decoration: none;
 	background-color: transparent;
 	color: #fff;
@@ -226,9 +209,8 @@ h1{
 
 h2{
 	font-size: 25px !important;
-	font-family: bbc reith serif !important;
-	font-weight: bold;
-	margin: 20px !important;
+	color: #000;
+	font-weight: bold !important;
 	padding-top: 30px;
 }
 
@@ -340,7 +322,7 @@ h4{
 .container{
 	display: flex;
 	height: auto;
-	margin: 0 25px !important;
+	margin: 0 50px !important;
 }
 
 span{
@@ -397,7 +379,7 @@ footer img{
 }
 
 #analise img{
-	height: 200px !important;
+	height: 300px !important;
 
 }
 
@@ -415,13 +397,11 @@ footer img{
 		width: 250px !important;
 	}
 
-	.monkey:hover{
-	width: 250px !important;
-}
 	.dropdown-menu{
 		background-color: transparent !important;
 		border: none !important;
 	}
+	
 
 	.slide1{
 		width: 95%;
@@ -476,7 +456,6 @@ footer img{
 		display: block;
 		text-align: left;
 		color: #333 !important;
-		font-family: bbc reith serif !important;
 		font-size: 15px !important;
 
 	}
