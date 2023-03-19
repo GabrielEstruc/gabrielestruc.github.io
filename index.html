@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Gabriel Estruc</title>
-	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="stylesheet"  href="bootstrap/css/bootstrap.min.css">
-	<link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
-	<link rel="stylesheet"  href="css/timeless.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta charset="UTF-8">
+  <title>Gabriel Estruc</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet"  href="bootstrap/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
+  <link rel="stylesheet"  href="css/timeless.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head>
 
-<body onload="atualizarIdade()">
+<body>
 
-	<section class="principal">
+  <section class="principal">
     <header class="fixo">
        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="imagens/bars-solid.svg" alt="menuham">
   </button>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-ligh bg-black">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link"  href="#sobre">Sobre</a>
-      </li>
     <li class="nav-item">
         <a class="nav-link" href="#ux">User Experience</a>
       </li>
@@ -34,9 +31,6 @@
         <a class="nav-link" href="#industrial">Industrial</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#resumo">Resumo</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="#contato">Contato</a>
       </li>
     </ul>
@@ -44,35 +38,12 @@
   </div>
 </nav>
    </header>
-
-
-   <section class="container sobre mx-auto py-5" id="sobre">
-    <div class="row mx-auto w-100">
-     <div class="col-12 col-lg-12 py-3">
-      <h2 style="font-family: Timeless" id="idade"></h2>
-        <a href="https://www.linkedin.com/in/gabriel-estruc" target="_blank"><img src="imagens/linkedin.svg" alt="linkedin"></a>
-        <a href="http://github.com/GabrielEstruc" target="_blank"><img src="imagens/github.svg" alt="github"></a>
-	<a href="https://drive.google.com/file/d/1l0kAyBG_snXjAs06LCJGCglvnnOPi0Dd/view?usp=sharing" target="_blank"><img src="imagens/curriculo.png" alt="cv"></a>
-      </div>
-     </section>
-		
-     <h2 id="ux">UX/UI</h2>
-     <div class="orna"></div>
-
-     <section class="categoria" id="cor">
-      <div class="slide1 fundo2">
-        <div class="caixa" style="width: auto; margin: 0 auto; height: 300px;"></div>
-      </div></div>
-      <div class="texto6" style="padding: 50px; margin: 0 auto;">
-        <h3 style="color: #fff;">Acesse:</h3><a href="https://xd.adobe.com/view/35fbcbe9-358b-4b75-62b1-883e48e4b631-43ca/?fullscreen" class="site3" target="_blank" style=" z-index: 98;"><img class = "monkey" src="imagens/monkeyplay.png" style="width: 400px; padding: 20px 50px; border: 5px solid transparent;background-color: #441B72;box-shadow: 3px 5px 6px #000;"></a></h3><h3 style="text-align: center; color: #fff;">Aplicativo auxiliar para músicos!</h3>
-      </div>
-    </section>
-
-    <section class="container mx-auto py-5 px-0">
+    
+    <section id="ux" class="container mx-auto py-5 px-0">
       <div class="row mx-auto w-100">
 
         <div class="col-12 px-1 col-lg-6 py-3">
-          <h2 style="padding-bottom: 30px; font-family: Timeless; text-align: left;">Sobre:</h5>
+          <h2>App para músicos</h2>
             <p style="text-align: justify;">Como toda forma de comunicação, tocar um instrumento ou cantar exige do músico prática, estudo e concentração para que este execute corretamente a leitura do que se diz.<br><br>
 
 
@@ -81,22 +52,20 @@
 
             Em resumo, este projeto busca trazer mais facilidades e adequação de ferramentas digitais na interação: homem x leitura x instrumento. Diminuindo a evasão e desistência das pessoas a esta prática tão bela.</p>
           </div>
-          <div class="col-12 col-lg-6 px-0 py-2">
-            <h2 style="background-color: #351559; color: #fff; padding: 10px;">MINDMAPPING</h2>
-            <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal1"><img src="imagens/mindmapping.png" style="width: 100%;"></a>
-          </div>
+
+           <div class="col-12 px-1 col-lg-6 py-3">
+          <img src="imagens/telas1.png" style="width: 100%;"></h3><p style="text-align: center;">Aplicativo auxiliar para músicos. <a href="https://xd.adobe.com/view/35fbcbe9-358b-4b75-62b1-883e48e4b631-43ca/?fullscreen" target="_blank" style=" z-index: 98;">Link de acesso ao protótipo.</p></a>
         </div>
+
       </section>
 
-
-      <section class="container sobre mx-auto py-5 px-0">
+      <section class="container mx-auto py-3 px-0">
         <div class="row mx-auto w-100">
-          <div class="col-12 col-lg-6 py-3 px-0" style="height: auto;">
-            <h2 style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">painel semântico</h2>
-            <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal2"><img src="imagens/painel.png" style="width: 100%; height: auto;"></a>
-          </div>
+            <div class="col-12 px-1 col-lg-6 py-3">
+          <img src="imagens/mindmapping.png" style="width: 100%;"></h3><p style="text-align: center;">Mindmapping</p>
+        </div>
           <div class="col-12 px-1 col-lg-6 py-3">
-            <h2 style="padding-bottom: 30px; font-family: Timeless; text-align: left;">Objetivos:</h5>
+            <h3 style="font-weight: bold;">Objetivo</h3>
               <p style="text-align: justify; color: #000;">• Qualidade, facilidade e maior variedade dos modos de leitura.
                 Estudar as formas de escrita e adequá-las ao público de acordo com o nível de conhecimento.<br><br>
 
@@ -111,145 +80,14 @@
 
               </p>
             </div>
-
-          </div>
         </section>
-
-        <section>
-          <div>
-            <h2 style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">análise</h2>
-          </div>
-        </section>
-
-        <section class="container sobre mx-auto" style="font-weight: bold;">
-          <div class="row mx-auto w-100"  id="analise">
-           <div class="col-12 col-lg-4 py-3">
-            <p>Idade</p>
-            <img src="imagens/graf1.png" alt="idade">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Instrumentos</p>
-            <img src="imagens/graf2.png" alt="instrumentos">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Frequência</p>
-            <img src="imagens/graf3.png" alt="frequencia">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Motivação</p>
-            <img src="imagens/graf4.png" alt="motivacao">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Proficiência</p>
-            <img src="imagens/graf5.png" alt="proficiencia">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Através do que?</p>
-            <img src="imagens/graf6.png" alt="atraves">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>O quê?</p>
-            <img src="imagens/graf7.png" alt="o que?">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Por onde?</p>
-            <img src="imagens/graf8.png" alt="por onde?">
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <p>Tipo de linguagem mais utilizada?</p>
-            <img src="imagens/graf9.png" alt="linguagem">
-          </div>
-        </div>
-      </section>
-
-      <h2 style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">Personas e cenários</h2>
-
-
-      <section class="container mx-auto py-5">
-        <div class="row mx-auto w-100">
-          <div class="col-12 col-lg-4 py-3">
-            <div class="perfil1"></div>
-            <h3 style="text-align: center; color: #7030A0;">Luiza, 19 anos. Acaba de ingressar na universidade e tem como uma de suas paixões cantar.</h3>
-            <p>"Utiliza seu smartphone para ouvir as músicas de seus artistas prediletos sempre que pode.<br><br>
-
-              Se tornou um habito ouvir todos os dias dentro do ônibus. Ultimamente está vidrada com o novo álbum da Kate Perry. Ela ama como Kate canta e toca seu violão brilhoso.<br><br>
-
-              Está decidida a aprender em seu quarto a tocar e quem sabe até compor suas próprias canções e compartilha-las com seus amigos nas redes sociais.”
-            </p>
-
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <div class="perfil2"></div>
-            <h3 style="text-align: center; color: #7030A0;">Bruno, 35 anos. Engenheiro de Produção.</h3>
-            <p>“Bruno é casado e tem dois filhos pequenos, trabalha como engenheiro de produção no setor comercial de uma empresa metalúrgica e precisa estar atento ao celular até nos fins de semana.<br><br>
-
-              Bruno costuma ir à igreja aos domingos, mas ultimamente anda muito cansado devido ao trabalho.<br><br>
-
-              Tem como hobby tocar seu teclado, que aprendeu na época de adolescente quando fazia parte da banda de sua igreja.<br><br>
-
-              Aprecia tocar músicas gospels de rock e pop internacional.”
-
-            </p>
-          </div>
-          <div class="col-12 col-lg-4 py-3">
-            <div class="perfil3"></div>
-            <h3 style="text-align: center; color: #7030A0;">Graça, 52 anos. Recepcionista e cantora de profissional.</h3>
-            <p>“Graça é divorciada, possui 3 filhos e mora com dois deles. Trabalha de segunda a sexta como recepcionista em um consultório dentário no Centro do RJ.<br><br>
-
-              Aos fins de semana adora encontrar seus amigos no bar para beber e conversar.<br><br> 
-
-              Amante do samba e da MPB, sempre que aparece uma oportunidade, canta nos bares de seu bairro nas noites de sexta, sábado ou domingo.<br><br>
-
-              Utiliza aplicativos de afinação para os instrumentos da banda, letras para guiar-se e sabe tocar cavaquinho, violão, pandeiro e um pouco de baixo.”
-
-
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h2 style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">mapa de empatia</h2>
-          <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal4"><img class="imagensresp" src="imagens/empatia.png" style="width: 100%; padding: 100px;"></a>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h2 class="wire" style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">wireframes</h2>
-          <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal6"><img class="imagensresp wire" src="imagens/wireframe.png" style="width: 100%; padding: 100px;"></a>
-        </div>
-      </section>
-
-      <section>
-        <div>
-          <h2 style="background-color: #351559; color: #fff; padding: 10px; text-transform: uppercase;">Patterns</h2>
-          <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal3"><img class="imagensresp" src="imagens/grupo205.png" style="width: 100%; padding: 100px;"></a>
-        </div>
-      </section>
-
-
-      <section class="categoria" id="cor2">
-        <div class="slide1 fundo2">
-          <div class="caixa" style="width: auto; margin: 0 auto; height: 300px;"></div>
-        </div></div>
-        <div class="texto6" style="padding: 50px; margin: 0 auto;">
-          <h3 style="color: #fff;">Acesse:</h3><a href="https://xd.adobe.com/view/35fbcbe9-358b-4b75-62b1-883e48e4b631-43ca/?fullscreen" class="site3" target="_blank" style=" z-index: 98;"><img class = "monkey" src="imagens/monkeyplay.png" style="width: 400px; padding: 20px 50px; border: 5px solid transparent;background-color: #441B72;box-shadow: 3px 5px 6px #000;"></a></h3><h3 style="text-align: center; color: #fff;">Aplicativo auxiliar para músicos!</h3>
-        </div>
-      </section>
-      <h2>Front-End</h2>
-      <div class="orna" id="front"></div>
-      <section  class="categoria">
+        <h2  id="front"></h2>
+      <section class="categoria">
         <div class=" slide1 fundo1">
           <a href="https://ciabmt.000webhostapp.com/" class="site" target="_blank"><img src="imagens/moon.svg" style="height: 200px;"></a></div>
-          <div class="texto8"><h2>Webpages</h2><p>Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.<br><h3>Link de acesso: <a href="https://ciabmt.000webhostapp.com/" class="site4" target="_blank">Black Moon Theater</a></h3><h3>Ferramentas utilizadas:</h3><div class="icones"><img src="imagens/jquery.png"><img src="imagens/html5.png"><img src="imagens/css.png"><img src="imagens/js.png"></div></div>
+          <div class="texto8"><h2>Webpages</h2><p>Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.<br><p>Link de acesso: <a href="https://ciabmt.000webhostapp.com/" target="_blank">Black Moon Theater</a></p><h3>Ferramentas utilizadas:</h3><div class="icones"><img src="imagens/jquery.png"><img src="imagens/html5.png"><img src="imagens/css.png"><img src="imagens/js.png"></div></div>
           </section>
-
-          <h2>Industrial</h2>
-          <div class="orna"id="industrial"></div>
-
-
+          <h2  id="industrial"></h2>
           <section class="categoria">
             <div class="slide1">
 
@@ -287,51 +125,12 @@
                 </a>
               </div>
 
-            </div></div>		
-            <div class="texto4"><h2>1."Amarelinha"</h2><p>Luminária feita em metal galvanizado e tubo galvanizado. Possui um mecanismo interno de switch.</p><h2>2."Kahamida"</h2><p>Banco em madeira de compensado naval envernizado e  entrelaçado em cordas. Ideia de flexibilidade e organicidade, feita totalmente através de encaixes.</p><h2>3."Kubo"</h2><p>Luminária de estilo minimalista. Feita em MDF folheado com madeira balsa e cúpula de linho.</p><div class="icones"></div></div>
+            </div></div >    
+            <div class="texto4"><h2>Industrial</h2><h3>1."Amarelinha"</h3><p>Luminária feita em metal galvanizado e tubo galvanizado. Possui um mecanismo interno de switch.</p><h3>2."Kahamida"</h3><p>Banco em madeira de compensado naval envernizado e  entrelaçado em cordas. Ideia de flexibilidade e organicidade, feita totalmente através de encaixes.</p><h3>3."Kubo"</h3><p>Luminária de estilo minimalista. Feita em MDF folheado com madeira balsa e cúpula de linho.</p><div class="icones"></div></div>
           </section>
 
-          <h2 id="resumo">Resumo</h2>
-          <div class="orna"></div>
-
-          <section class="container sobre mx-auto">
-            <div class="row mx-auto w-100">
-             <div class="col-6 col-lg-3 py-3">
-              <img src="imagens/graduacao.svg" alt="graduação">
-              <h5>Formação</h5>
-		<p>Análise e Desenvolvimento de Sistemas - UVA<br>2021-2023.<hr>
-              <p>Design de Produto - UFRJ<br>2012-2018.
-                </div>
-                <div class="col-6 col-lg-3 py-3">
-                  <img src="imagens/caminho.svg" alt="livro">
-                  <h5>Trajetória</h5>
-		  <p>UX Designer Intern, Equinix.</p><hr>
-		  <p>Projetista, SUPERPESA Marítima.</p><hr>
-                  <p>Bolsista de Iniciação Científica na parte de comunicação da TV Honestino, PIBIAC - UFRJ.</p>
-                </div>
-                <div class="col-6 col-lg-3 py-3">
-                  <img src="imagens/certificado.svg" alt="certificado">
-                  <h5>Certificados</h5>
-                  <p>Curso de formação em Front-End. Instituto Infnet.</p><hr>
-                  <p>Nível B2 italiano</p><hr>
-                  <p>Design & Ux - Alura</p><hr>
-                  <p>Bootcamp Avanade com .Net. Digital Inovation One.</p>
-                </div>
-                <div class="col-6 col-lg-3 py-3">
-                  <img src="imagens/aviao.svg" alt="avião">
-                  <h5>Intercâmbio</h5>
-                  <p>Design del Prodotto. Universitá di Bologna, IT.<br>2014-2015.</p>
-                </div>
-              </div>
-            </section>
-
-            <footer>
-
-
-             <h2  id="contato">Contato</h2>
-             <div class="orna2"></div>
-
-             <h2 style="color: #fff; margin: 10px !important; font-size: 20px !important;">Email: gestrucso@gmail.com</span><br>Tel.: 021 99704-1563</h2>
+            <footer id="contato">
+              <h2 style="color: #fff;">Contato</h2>
              <div class="contatos">
                <a href="https://www.linkedin.com/in/gabriel-estruc" target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
                <a href="https://www.facebook.com/gabriel.estruc" target="_blank"><img src="imagens/facebook.png" alt="facebook"></a>
