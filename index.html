@@ -143,7 +143,7 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="atualizarIdade()">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -229,7 +229,7 @@
       
       <div class="col-lg-4 mx-auto">
         <div class="perfil bd-placeholder-img rounded-circle mx-auto"></div>
-        <h2 class="fw-normal py-3">Gabriel Estruc, 29.</h2>
+        <h2 class="fw-normal py-3">Gabriel Estruc,<spam id="idade"></spam></h2>
         <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -242,6 +242,23 @@
   </footer>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+  var data = new Date();
+  var nasc = 1994;
+  var ano = data.getFullYear();
+  var mes = data.getMonth();
+  var dia = data.getDay();
+  function atualizarIdade(){
+  if (mes <= 5 && dia < 10){
+    idade = (ano - nasc) - 1;
+    } else {
+      idade = ano - nasc;
+    }
+    document.getElementById("idade").innerHTML = " " + idade + ".";
+  }
+
+
+</script>
 
     </body>
 </html>
