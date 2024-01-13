@@ -25,6 +25,16 @@
       
       }
 
+       .tela2{
+        width: 500px;
+        height: 500px;
+        background-image: url("imagens/snacktrem.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      
+      }
+
        .site{
         width: 500px;
         height: 500px;
@@ -174,9 +184,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link"  aria-current="page" href="#">UX</a>
-          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          UX
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">MonkeyPlay</a>
+           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#snacktrem">SnackTrem</a>
+        </div>
+      </li>
           <li class="nav-item">
             <a class="nav-link" href="#front">Front-End</a>
           </li>
@@ -213,7 +230,6 @@
        <div class="tela bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
       </div>
     </div>
-
   
     <div class="row">
   <div class="col-sm w-20">
@@ -258,13 +274,32 @@
   </div>
 </div>
     
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+   
+   <hr class="featurette-divider" id="snacktrem">
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="row featurette">
+      <div class="col-md-5 order-md-1">
+       <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+      </div>
+       <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">SnackTrem [Redesign do App]<span class="text-body-secondary"><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
+        <p class="lead py-2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
+        <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank">Acesse o Protótipo</a></p>
+      </div>
+    </div>
+
     <hr class="featurette-divider" id="front">
 
     <div class="row featurette" >
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading fw-normal lh-1">Black Moon Theater<span class="text-body-secondary"><br>Cia de Teatro</span></h2>
         <p class="lead">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
-        <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank">Acesse o Website</a></p>      </div>
+        <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank">Acesse o Website</a></p></div>
       <div class="col-md-5 order-md-1">
        <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
       </div>
