@@ -1,368 +1,18 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto" id="monkeyplay">
-  <head>
-  </script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="my portfolio">
-    <title>Gabriel Estruc | Portfólio</title>
-
-     
-    <link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <style>
-      html{
-         scroll-behavior: smooth;
-      }
-      .card-img-top{
-        max-width: 100px;
-      }
-
-      img{
-        background-size: contain !important;
-        max-height: 500px;
-        width: 100%;
-        padding: 5%;
-      }
-      .tela{
-        width: 500px;
-        height: 500px;
-        background-image: url("imagens/tela.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      
-      }
-
-      .carousel-control-next-icon, .carousel-control-prev-icon{
-        background-color: #000;
-        opacity: 30%;
-      }
-
-       .tela2{
-        width: 500px;
-        height: 500px;
-        background-image: url("imagens/snacktrem.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      
-      }
-
-       .site{
-        width: 500px;
-        height: 500px;
-        background-image: url("imagens/moon.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
-       .perfil{
-        background-image: url("imagens/perfil.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 150px;
-        width: 150px;
-      }
-
-      p{
-        text-align: justify;
-      }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-     
-         .navbar-brand{
-        font-size: 1.2em !important;
-      }
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-
-      @media (max-width: 768px){
-      main{
-        margin: 0px 5px;
-      }
-       p{
-        font-size: 18px !important;
-      }
-      .site, .tela{
-        display: none;
-      }
-      #website{
-        text-align: left !important;
-      }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-  </head>
-  <body onload="atualizarIdade()">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
-       
-<header data-bs-theme="dark">
-  <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-1">
-  <a class="navbar-brand" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank"> Gabriel Estruc | UX Designer</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          User Experience
-        </a>
-        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#monkeyplay">MonkeyPlay</a>
-          <a class="dropdown-item" href="#snacktrem">SnackTrem</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#front">Front-End</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contato">Contato</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</header>
-
-
-
-<main>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-   
-
-    <!-- START THE FEATURETTES -->
-
-    <div class="row featurette py-5">
-      <div class="col-md-7">
-        <h2 class="text-body-primary">MonkeyPlay<span class="text-body-secondary"><br> O app para músicos</span></h2>
-        <p class="lead py-5">MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!</p>
-        <p><a class="btn btn-warning" href="https://www.figma.com/proto/LYdH3999zmcgteoD1rxwQr/MonkeyPlay?page-id=0%3A1&type=design&node-id=1-2&viewport=-1052%2C361%2C0.51&t=jgcVWNPAaDMMttaH-9&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">Acesse o Protótipo</a></p>
-      </div>
-      <div class="col-md-5 order-md-1">
-       <div class="tela bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
-      </div>
-    </div>
-  
-  <div class="row featurette py-2">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <h2 class="text-body-secondary text-center">Jornada do Usuário</h2>
-      <img class="d-block mx-auto" src="imagens/jornada.svg" alt="jornada">
-    </div>
-    <div class="carousel-item">
-      <h2 class="text-body-secondary text-center">Personas</h2>
-      <img class="d-block mx-auto" src="imagens/personas.svg" alt="personas">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
-  </div>
-  <div class="row featurette py-2">
-      <h2 class="text-body-secondary text-center">Dados</h2>
-  <div class="col-sm w-20">
-
-     <div class="card border-0 text-center">
-      <div class="card-body">
-        <img class="card-img-top" src="imagens/Account.svg" alt="Card image cap">
-        <p class="text-center lead py-2" style="font-size: 15px;">61% do público é 30+</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm w-20">
-    <div class="card border-0 text-center">
-      <div class="card-body">
-        <img class="card-img-top" src="imagens/Guitar.svg" alt="Card image cap">
-        <p class="text-center lead py-2"  style="font-size: 15px;">Violão e guitarra são citados o dobro, comparados a outros instrumentos.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm w-20">
-    <div class="card border-0 text-center">
-      <div class="card-body">
-         <img class="card-img-top" src="imagens/Jump.svg" alt="Card image cap">
-        <p class="text-center lead py-2" style="font-size: 15px;">73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm w-20">
-    <div class="card border-0 text-center">
-      <div class="card-body">
-        <img class="card-img-top" src="imagens/Book.svg" alt="Card image cap">
-        <p class="text-center lead py-2"  style="font-size: 15px;">88% tem interesse em aprender do zero ou melhorar.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm w-20">
-    <div class="card border-0 text-center w-20">
-      <div class="card-body">
-        <img class="card-img-top" src="imagens/Smartphones.svg" alt="Card image cap">
-        <p class="text-center lead py-2"  style="font-size: 15px;">Smartphones são o aparelhos mais ultilizados para acompanhar.</p>
-      </div>
-    </div>
-  </div>
-</div>
-    
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-   
-   <hr class="featurette-divider" id="snacktrem">
-
-    <!-- START THE FEATURETTES -->
-
-    <div class="row featurette">
-      <div class="col-md-5 order-md-1">
-       <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
-      </div>
-       <div class="col-md-7">
-        <h2 class="text-body-primary">SnackTrem [Redesign do App]<span class="text-body-secondary"><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
-        <p class="lead py-2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
-        <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank">Acesse o Protótipo</a></p>
-      </div>
-    </div>
-
-    <hr class="featurette-divider" id="front">
-
-    <div class="row featurette" >
-      <div class="col-md-7 order-md-2">
-        <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary"><br>Cia de Teatro</span></h2>
-        <p class="lead">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
-        <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank">Acesse o Website</a></p></div>
-      <div class="col-md-5 order-md-1">
-       <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
-      </div>
-    </div>
-
-    <hr class="featurette-divider"  id="contato">
-
-    <!-- /END THE FEATURETTES -->
-<div class="row">
-      
-      <div class="col-lg-4 mx-auto">
-        <div class="perfil bd-placeholder-img rounded-circle mx-auto"></div>
-        <h2 class="fw-normal py-3">Gabriel Estruc,<spam id="idade"></spam></h2>
-        <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-
- 
-
-  <!-- FOOTER -->
-  <footer class="container">
-  </footer>
-</main>
+<head>
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="my portfolio">
+<title>Gabriel Estruc | Portfólio</title>
+<link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="carousel.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- JS - ATUALIZAÇÃO DE IDADE DE CONTATOS -->
 <script type="text/javascript">
   var data = new Date();
   var nasc = 1994;
@@ -370,16 +20,231 @@
   var mes = data.getMonth();
   var dia = data.getDay();
   function atualizarIdade(){
-  if (mes <= 5 && dia < 10){
-    idade = (ano - nasc) - 1;
+    if (mes <= 5 && dia < 10){
+      idade = (ano - nasc) - 1;
     } else {
       idade = ano - nasc;
     }
     document.getElementById("idade").innerHTML = " " + idade + ".";
   }
-
-
 </script>
+<!-- ESTILOS - GERAL -->
+<style>
+  html{
+   scroll-behavior: smooth;
+ }
+ .card-img-top{
+  max-width: 100px;
+}
+img{
+  background-size: contain !important;
+  max-height: 500px;
+  padding: 5%;
+}
+.tela{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/tela.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000;
+  opacity: 30%;
+}
+.tela2{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/snacktrem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.site{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil{
+  background-image: url("imagens/perfil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+}
+p{
+  text-align: justify;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+/*ESTILO PARA TELA PEQUENA*/
+@media (max-width: 768px){
+  main{
+    margin: 0px 5px;
+  }
+  p{
+    font-size: 18px !important;
+  }
+  .site, .tela{
+    display: none;
+  }
+  #website{
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+<body onload="atualizarIdade()">
+  <!-- MENU DE NAVEGAÇÃO -->
+  <header data-bs-theme="dark">
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-1">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank"> Gabriel Estruc | UX Designer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              User Experience
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#monkeyplay">MonkeyPlay</a>
+              <a class="dropdown-item" href="#snacktrem">SnackTrem</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#front">Front-End</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container marketing">
+      <!-- SEÇÃO UX -->
+      <div class="row featurette py-5">
+        <div class="col-md-7">
+          <h2 class="text-body-primary">MonkeyPlay<span class="text-body-secondary"><br> O app para músicos</span></h2>
+          <p class="lead py-2">MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!</p>
+          <p><a class="btn btn-warning" href="https://www.figma.com/proto/LYdH3999zmcgteoD1rxwQr/MonkeyPlay?page-id=0%3A1&type=design&node-id=1-2&viewport=-1052%2C361%2C0.51&t=jgcVWNPAaDMMttaH-9&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">Acesse o Protótipo</a></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+         <div class="tela bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+       </div>
+     </div>
+     <!-- CARROSSEL UX - MONKEYPLAY -->
+     <div class="row featurette py-5">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="text-body-secondary text-center jornada">Jornada do Usuário</h2>
+            <img class="d-block mx-auto img-fluid max-width-100" src="imagens/jornada.svg" alt="jornada">
+          </div>
+          <div class="carousel-item">
+            <h2 class="text-body-secondary text-center">Personas</h2>
+            <img class="d-block mx-auto img-fluid max-width-100" src="imagens/personas.svg" alt="personas">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- DADOS DIVIDIDOS EM 5 COLUNAS EM CARDS UX - MONKEYPLAY -->
+      <div class="row featurette py-5">
+        <h2 class="text-body-secondary text-center">Dados</h2>
+        <div class="col-sm w-20">
 
-    </body>
+         <div class="card border-0 text-center">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/Account.svg" alt="Card image cap">
+            <p class="text-center lead py-2" style="font-size: 15px;">61% do público é 30+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm w-20">
+        <div class="card border-0 text-center">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/Guitar.svg" alt="Card image cap">
+            <p class="text-center lead py-2"  style="font-size: 15px;">Violão e guitarra são citados o dobro, comparados a outros instrumentos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm w-20">
+        <div class="card border-0 text-center">
+          <div class="card-body">
+           <img class="card-img-top" src="imagens/Jump.svg" alt="Card image cap">
+           <p class="text-center lead py-2" style="font-size: 15px;">73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente.</p>
+         </div>
+       </div>
+     </div>
+     <div class="col-sm w-20">
+      <div class="card border-0 text-center">
+        <div class="card-body">
+          <img class="card-img-top" src="imagens/Book.svg" alt="Card image cap">
+          <p class="text-center lead py-2"  style="font-size: 15px;">88% tem interesse em aprender do zero ou melhorar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm w-20">
+      <div class="card border-0 text-center w-20">
+        <div class="card-body">
+          <img class="card-img-top" src="imagens/Smartphones.svg" alt="Card image cap">
+          <p class="text-center lead py-2"  style="font-size: 15px;">Smartphones são o aparelhos mais ultilizados para acompanhar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container marketing">
+   <hr class="featurette-divider" id="snacktrem">
+   <!-- SEÇÃO UX - SNACKTREM -->
+   <div class="row featurette">
+    <div class="col-md-5 order-md-1">
+     <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+   </div>
+   <div class="col-md-7">
+    <h2 class="text-body-primary">SnackTrem [Redesign do App]<span class="text-body-secondary"><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
+    <p class="lead py-2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
+    <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank">Acesse o Protótipo</a></p>
+  </div>
+</div>
+<hr class="featurette-divider" id="front">
+<!-- SEÇÃO FRONT-END -->
+<div class="row featurette" >
+  <div class="col-md-7 order-md-2">
+    <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary"><br>Cia de Teatro</span></h2>
+    <p class="lead">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
+    <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank">Acesse o Website</a></p></div>
+    <div class="col-md-5 order-md-1">
+     <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+   </div>
+ </div>
+ <hr class="featurette-divider"  id="contato">
+ <!-- FOOTER - CONTATOOS -->
+ <footer class="container">
+   <div class="col-lg-4 mx-auto">
+    <div class="perfil bd-placeholder-img rounded-circle mx-auto"></div>
+    <h2 class="fw-normal py-3 text-center">Gabriel Estruc,<spam id="idade"></spam></h2>
+    <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
+  </div>
+</div>
+</footer>
+</main>
+</body>
 </html>
