@@ -37,32 +37,24 @@
     }
   </script>
   <!-- ESTILOS - GERAL -->
-    <style>
+<style>
       html{
        scroll-behavior: smooth;
      }
      .card-img-top{
       max-width: 100px;
     }
-    .persona_f, .persona_m, .jornada, .tela{
-      height: 500px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+    img{
+      max-height: 500px;
     }
-    .persona_f{
-      background-image: url(imagens/persona_f.svg);
-    }
-    .persona_m{
-      background-image: url(imagens/persona_m.svg);
-    }
-    .jornada{
-      background-image: url(imagens/jornada.svg);
-    }
+    
     .tela{
       width: 500px;
       height: 500px;
       background-image: url("imagens/tela.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     .carousel-control-next-icon, .carousel-control-prev-icon{
       background-color: #000;
@@ -171,13 +163,13 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <h2 class="text-body-secondary text-center">Jornada do Usuário</h2>
-                <div class="jornada d-block mx-auto img-fluid max-width-100 jornada" alt="jornada"></div>
+                <img class="jornada d-block mx-auto img-fluid max-width-100"  src="imagens/jornada.svg" alt="jornada">
               </div>
               <div class="carousel-item">
                 <h2 class="text-body-secondary text-center">Personas</h2>
                 <div class="row d-flex flex-wrap mx-auto">
-                <div class="persona_m img-fluid col-md-6 col-sm-12"></div>
-                <div class="persona_f img-fluid col-md-6 col-sm-12"></div>
+                <img class="persona_m img-fluid col-md-6 col-sm-12" src="imagens/persona_m.svg" alt="personas">
+                <img class="persona_f img-fluid col-md-6 col-sm-12" src="imagens/persona_f.svg" alt="personas">
               </div>
               </div>
             </div>
