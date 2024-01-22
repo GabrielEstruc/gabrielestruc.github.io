@@ -1,265 +1,354 @@
-  <!doctype html>
-  <html lang="en" data-bs-theme="auto" id="monkeyplay">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="my portfolio">
-  <title>Gabriel Estruc | Portfólio</title>
-  <link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link href="carousel.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WR150WVS3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!doctype html>
+<html lang="pt" data-bs-theme="auto" id="monkeyplay">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="my portfolio">
+<title>Gabriel Estruc | Portfólio</title>
+<link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="carousel.css" rel="stylesheet">
+<script type="text/javascript" src="conteudo.json"> </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  gtag('config', 'G-3WR150WVS3');
-</script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- JS - ATUALIZAÇÃO DE IDADE DE CONTATOS -->
-  <script type="text/javascript">
-    var data = new Date();
-    var nasc = 1994;
-    var ano = data.getFullYear();
-    var mes = data.getMonth();
-    var dia = data.getDay();
-    function atualizarIdade(){
-      if (mes <= 5 && dia < 10){
-        idade = (ano - nasc) - 1;
-      } else {
-        idade = ano - nasc;
-      }
-      document.getElementById("idade").innerHTML = " " + idade + ".";
-    }
-  </script>
-  <!-- ESTILOS - GERAL -->
+<!-- ESTILOS - GERAL -->
 <style>
-      html{
-       scroll-behavior: smooth;
-     }
-     .card-img-top{
-      max-width: 100px;
-    }
-    img{
-      max-height: 500px;
-      padding: 3% !important;
-    }
-    
-    .tela{
-      width: 500px;
-      height: 500px;
-      background-image: url("imagens/tela.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon{
-      background-color: #000;
-      opacity: 30%;
-    }
-    .tela2{
-      width: 500px;
-      height: 500px;
-      background-image: url("imagens/snacktrem.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .site{
-      width: 500px;
-      height: 500px;
-      background-image: url("imagens/moon.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .perfil{
-      background-image: url("imagens/perfil.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 150px;
-      width: 150px;
-    }
-    p{
-      text-align: justify;
-    }
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-    /*ESTILO PARA TELA PEQUENA*/
-    @media (max-width: 768px){
-      main{
-        margin: 0px 5px;
-      }
-      p{
-        font-size: 18px !important;
-      }
-      .site, .tela{
-        display: none;
-      }
-      #website{
-        text-align: left !important;
-      }
-      .carousel-item{
-        height: auto;
-      }
-      
-    }
-    </style>
-    </head>
-    <body onload="atualizarIdade()">
-      <!-- MENU DE NAVEGAÇÃO -->
-      <header data-bs-theme="dark">
-        <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-1">
-          <a class="navbar-brand" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank"> Gabriel Estruc | UX Designer</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  User Experience
-                </a>
-                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#monkeyplay">MonkeyPlay</a>
-                  <a class="dropdown-item" href="#snacktrem">SnackTrem</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#front">Front-End</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <div class="container marketing">
-          <!-- SEÇÃO UX -->
-          <div class="row featurette py-5">
-            <div class="col-md-7">
-              <h2 class="text-body-primary">MonkeyPlay<span class="text-body-secondary"><br> O app para músicos</span></h2>
-              <p class="lead py-2">MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!</p>
-              <p><a class="btn btn-warning" href="https://www.figma.com/proto/LYdH3999zmcgteoD1rxwQr/MonkeyPlay?page-id=0%3A1&type=design&node-id=1-2&viewport=-1052%2C361%2C0.51&t=jgcVWNPAaDMMttaH-9&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">Acesse o Protótipo</a></p>
-            </div>
-            <div class="col-md-5 order-md-1">
-             <div class="tela bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
-           </div>
-         </div>
-         <!-- CARROSSEL UX - MONKEYPLAY -->
-         <div class="row featurette py-5">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="20000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h2 class="text-body-secondary text-center">Jornada do Usuário</h2>
-                <img class="jornada d-block mx-auto img-fluid max-width-100"  src="imagens/jornada.svg" alt="jornada">
-              </div>
-              <div class="carousel-item">
-                <h2 class="text-body-secondary text-center">Personas</h2>
-                <div class="row d-flex flex-wrap mx-auto">
-                <img class="persona_m img-fluid col-md-6 col-sm-12" src="imagens/persona_m.svg" alt="personas">
-                <img class="persona_f img-fluid col-md-6 col-sm-12" src="imagens/persona_f.svg" alt="personas">
-              </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-          </div>
-          <!-- DADOS DIVIDIDOS EM 5 COLUNAS EM CARDS UX - MONKEYPLAY -->
-          <div class="row featurette py-5">
-            <h2 class="text-body-secondary text-center">Dados</h2>
-            <div class="col-sm w-20">
+  html{
+   scroll-behavior: smooth;
+ }
+ .card-img-top{
+  max-width: 100px;
+}
+img{
+  max-height: 500px;
+}
+.translate{
+    position: fixed;
+    right: 5px;
+  }
 
-             <div class="card border-0 text-center">
-              <div class="card-body">
-                <img class="card-img-top" src="imagens/Account.svg" alt="Card image cap">
-                <p class="text-center lead py-2" style="font-size: 15px;">61% do público é 30+</p>
-              </div>
+.tela{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/tela.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000;
+  opacity: 30%;
+}
+.tela2{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/snacktrem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.site{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil{
+  background-image: url("imagens/perfil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+}
+p{
+  text-align: justify;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+/*ESTILO PARA TELA PEQUENA*/
+@media (max-width: 768px){
+  main{
+    margin: 0px 5px;
+  }
+  p{
+    font-size: 18px !important;
+  }
+  .site, .tela{
+    display: none;
+  }
+  #website{
+    text-align: left !important;
+  }
+  .carousel-item{
+    height: auto;
+  }
+  .translate{
+    position: relative;
+  }
+  
+}
+</style>
+</head>
+<body onload="atualizarIdade()">
+  <!-- MENU DE NAVEGAÇÃO -->
+  <header data-bs-theme="dark">
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-1">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank"> Gabriel Estruc | UX Designer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              User Experience
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#monkeyplay">MonkeyPlay</a>
+              <a class="dropdown-item" href="#snacktrem">SnackTrem</a>
             </div>
-          </div>
-          <div class="col-sm w-20">
-            <div class="card border-0 text-center">
-              <div class="card-body">
-                <img class="card-img-top" src="imagens/Guitar.svg" alt="Card image cap">
-                <p class="text-center lead py-2"  style="font-size: 15px;">Violão e guitarra são citados o dobro, comparados a outros instrumentos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm w-20">
-            <div class="card border-0 text-center">
-              <div class="card-body">
-               <img class="card-img-top" src="imagens/Jump.svg" alt="Card image cap">
-               <p class="text-center lead py-2" style="font-size: 15px;">73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente.</p>
-             </div>
-           </div>
-         </div>
-         <div class="col-sm w-20">
-          <div class="card border-0 text-center">
-            <div class="card-body">
-              <img class="card-img-top" src="imagens/Book.svg" alt="Card image cap">
-              <p class="text-center lead py-2"  style="font-size: 15px;">88% tem interesse em aprender do zero ou melhorar.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm w-20">
-          <div class="card border-0 text-center w-20">
-            <div class="card-body">
-              <img class="card-img-top" src="imagens/Smartphones.svg" alt="Card image cap">
-              <p class="text-center lead py-2"  style="font-size: 15px;">Smartphones são o aparelhos mais ultilizados para acompanhar.</p>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#front">Front-End</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato" id="nav">Contato</a>
+          </li>
+        </ul>
       </div>
-      <div class="container marketing">
-       <hr class="featurette-divider" id="snacktrem">
-       <!-- SEÇÃO UX - SNACKTREM -->
-       <div class="row featurette">
-        <div class="col-md-5 order-md-1">
-         <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
-       </div>
-       <div class="col-md-7">
-        <h2 class="text-body-primary">SnackTrem [Redesign do App]<span class="text-body-secondary"><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
-        <p class="lead py-2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
-        <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank">Acesse o Protótipo</a></p>
-      </div>
+    </nav>
+  </header>
+   <div class="translate d-grid gap-2 d-md-flex justify-content-md-end py-5">
+          <button type="button" class="btn btn-light" onclick="traduzirPT()">PT-BR</button>
+          <button type="button" class="btn btn-light" onclick="traduzirEN()">EN</button>
     </div>
-    <hr class="featurette-divider" id="front">
-    <!-- SEÇÃO FRONT-END -->
-    <div class="row featurette" >
-      <div class="col-md-7 order-md-2">
-        <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary"><br>Cia de Teatro</span></h2>
-        <p class="lead">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
-        <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank">Acesse o Website</a></p></div>
+  <main>
+    <div class="container marketing">
+      <!-- SEÇÃO UX -->
+      <div class="row featurette py-5">
+        <div class="col-md-7">
+          <h2 class="text-body-primary" id="title">MonkeyPlay<span class="text-body-secondary" id="subtitle"><br> O app para músicos</span></h2>
+          <p class="lead py-2" id="text">MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!</p>
+          <p><a class="btn btn-warning" href="https://www.figma.com/proto/LYdH3999zmcgteoD1rxwQr/MonkeyPlay?page-id=0%3A1&type=design&node-id=1-2&viewport=-1052%2C361%2C0.51&t=jgcVWNPAaDMMttaH-9&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank" id="button">Acesse o Protótipo</a></p>
+        </div>
         <div class="col-md-5 order-md-1">
-         <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+         <div class="tela bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
        </div>
      </div>
-     <hr class="featurette-divider"  id="contato">
-     <!-- FOOTER - CONTATOS -->
-     <footer class="container">
-       <div class="col-lg-4 mx-auto">
-        <div class="perfil bd-placeholder-img rounded-circle mx-auto"></div>
-        <h2 class="fw-normal py-3 text-center">Gabriel Estruc,<spam id="idade"></spam></h2>
-        <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
+     <!-- CARROSSEL UX - MONKEYPLAY -->
+     <div class="row featurette py-5">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="20000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="text-body-secondary text-center" id="journey">Jornada do Usuário</h2>
+            <img class="jornada d-block mx-auto img-fluid max-width-100"  src="imagens/jornada.svg" alt="jornada" id="journey_en">
+          </div>
+          <div class="carousel-item">
+            <h2 class="text-body-secondary text-center">Personas</h2>
+            <div class="row">
+            <div class="card border-0 text-center col-md-6 col-sm-12">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/persona_m.svg" alt="personas">
+
+          <p class="text-center lead py-2" id="persona_m"><strong>Bruno, 35</strong><br><br>"É casado e tem dois filhos pequenos. Costumava tocar violão quando jovem, mas ultimamente anda muito cansado devido ao trabalho. Hoje em dia a paixão adormecida tem voltado e agora quer praticar mais e melhorar suas habilidades no violão.”</p>
+          </div>
+          </div>
+          <div class="card border-0 text-center col-md-6 col-sm-12">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/persona_f.svg" alt="personas">
+            <p class="text-center lead py-2" id="persona_f"><strong>
+            Luiza, 27</strong><br><br> “Luiza mora sozinha. Nas horas vagas passa bastante tempo no celular.
+            Tem se sentido muito estressada ultimamente. Decide iniciar atividades que melhorassem sua saúde física e mental. Começa a buscar formas de aprender a tocar.” 
+            </p>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- DADOS DIVIDIDOS EM 5 COLUNAS EM CARDS UX - MONKEYPLAY -->
+      <div class="row featurette py-5">
+        <h2 class="text-body-secondary text-center" id="research">Pesquisa</h2>
+        <div class="col-sm w-20">
+
+         <div class="card border-0 text-center">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/Account.svg" alt="Card image cap">
+            <p class="text-center lead py-2" style="font-size: 15px;" id="res1">61% do público é 30+</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm w-20">
+        <div class="card border-0 text-center">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/Guitar.svg" alt="Card image cap">
+            <p class="text-center lead py-2"  style="font-size: 15px;" id="res2">Violão e guitarra são citados o dobro, comparados a outros instrumentos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm w-20">
+        <div class="card border-0 text-center">
+          <div class="card-body">
+           <img class="card-img-top" src="imagens/Jump.svg" alt="Card image cap">
+           <p class="text-center lead py-2" style="font-size: 15px;" id="res3">73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente.</p>
+         </div>
+       </div>
+     </div>
+     <div class="col-sm w-20">
+      <div class="card border-0 text-center">
+        <div class="card-body">
+          <img class="card-img-top" src="imagens/Book.svg" alt="Card image cap">
+          <p class="text-center lead py-2"  style="font-size: 15px;" id="res4">88% tem interesse em aprender do zero ou melhorar.</p>
+        </div>
       </div>
     </div>
-    </footer>
-    </main>
-    </body>
-    </html>
+    <div class="col-sm w-20">
+      <div class="card border-0 text-center w-20">
+        <div class="card-body">
+          <img class="card-img-top" src="imagens/Smartphones.svg" alt="Card image cap">
+          <p class="text-center lead py-2"  style="font-size: 15px;" id="res5">Smartphones são o aparelhos mais ultilizados para acompanhar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container marketing">
+   <hr class="featurette-divider" id="snacktrem">
+   <!-- SEÇÃO UX - SNACKTREM -->
+   <div class="row featurette">
+    <div class="col-md-6 order-md-1">
+     <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+   </div>
+   <div class="col-md-6">
+    <h2 class="text-body-primary">SnackTrem [App Redesign]<span class="text-body-secondary" id="subtitle2" ><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
+    <p class="lead py-2" id="text2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
+    <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank" id="button3">Acesse o Protótipo</a></p>
+  </div>
+</div>
+<hr class="featurette-divider" id="front">
+<!-- SEÇÃO FRONT-END -->
+<div class="row featurette" >
+  <div class="col-md-6 order-md-2">
+    <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary" id="subtitle3"><br>Cia de Teatro</span></h2>
+    <p class="lead" id="text3">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
+    <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank" id="button2">Acesse o Website</a></p></div>
+    <div class="col-md-6 order-md-1">
+     <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+   </div>
+ </div>
+ <hr class="featurette-divider"  id="contato">
+ <!-- FOOTER - CONTATOS -->
+ <footer class="container">
+   <div class="col-lg-4 mx-auto">
+    <div class="perfil bd-placeholder-img rounded-circle mx-auto"></div>
+    <h2 class="fw-normal py-3 text-center">Gabriel Estruc,<spam id="idade"></spam></h2>
+    <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
+  </div>
+</div>
+</footer>
+</main>
+
+ <!-- JS - ATUALIZAÇÃO DE IDADE DE CONTATOS -->
+<script type="text/javascript">
+  var data = new Date();
+  var nasc = 1994;
+  var ano = data.getFullYear();
+  var mes = data.getMonth();
+  var dia = data.getDay();
+  function atualizarIdade(){
+    if (mes <= 5 && dia < 10){
+      idade = (ano - nasc) - 1;
+    } else {
+      idade = ano - nasc;
+    }
+    document.getElementById("idade").innerHTML = " " + idade + ".";
+  }
+  const lang = {"nav": ["Contact","Contato"],
+                "title":"MonkeyPlay", 
+                "subtitle":["<br>A musicians app", 
+                            "<br>O app para músicos"], 
+                "text": ["MonkeyPlay is the solution designed to provide more dynamic and customizable ways to follow your favorite songs when playing!<br><br>With a layout designed to facilitate reading and learning, build your music library, adjust them to your taste, and hit play!",
+
+                         "MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!"],
+                "button": ["Access Prototype", "Acesse o Protótipo"],
+                "persona_m": ["<strong>Bruno, 35</strong><br><br>He is married and has two young children. He used to play the guitar when he was young, but lately, he has been very tired due to work. Nowadays, the dormant passion has awakened, and now he wants to practice more and improve his guitar skills.", "<strong>Bruno, 35</strong><br><br>É casado e tem dois filhos pequenos. Costumava tocar violão quando jovem, mas ultimamente anda muito cansado devido ao trabalho. Hoje em dia a paixão adormecida tem voltado e agora quer praticar mais e melhorar suas habilidades no violão."],
+                "persona_f": ["<strong>Luiza, 27</strong><br><br>She lives alone. During free time, spends a lot of time on the phone.Has been feeling very stressed lately. Decides to start activities that would improve her body and mind health. Begins to look for ways to learn to play the guitar.", "<strong>Luiza, 27</strong><br><br>Mora sozinha. Nas horas vagas passa bastante tempo no celular. Tem se sentido muito estressada ultimamente. Decide iniciar atividades que melhorassem sua saúde física e mental. Começa a buscar formas de aprender a tocar."],
+                "journey": ["User Journey","Jornada do Usuário"],
+                "research": ["Research", "Pesquisa"],
+                "res1": ["61% of the audience is +30", "61% do público é 30+"],
+                "res2": ["Guitar and acoustic guitar are mentioned twice as much as other instruments.", "Violão e guitarra são citados o dobro, comparados a outros instrumentos."],
+                "res3": ["73% use it as a hobby or for pleasure, followed by 21% for practice, and 6% professionally.", "73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente."],
+                "res4": ["88% are interested in learning from scratch or improving their skills.", "88% tem interesse em aprender do zero ou melhorar."],
+                "res5": ["Smartphones are the most used devices to follow lyrics.", "Smartphones são o aparelhos mais ultilizados para acompanhar."],
+                "subtitle2": ["<br>Design Undergraduate Project, Federal University of Rio de Janeiro", "<br>Projeto de Graduação em Desenho Industrial, UFRJ"],
+                "text2": ["SnackTrem was conceived and designed to be a more affordable, streamlined, and aligned with the world of Internet of Things(IoT), combining technology and design. <br><br>  Inspired by the business model of automated sales within trains and high-speed trains in countries like Japan and Italy, the project utilizes automation and interaction with mobile devices to modernize the way snacks are purchased. This approach aims to reduce manufacturing costs and the dimensions of the machinery while enhancing security for the owner by eliminating the storage of cash and coins in the vending machine.", "SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas."],
+                "subtitle3": ["Theater Company", "Cia de Teatro"],
+                "text3": ["Webpage project using mobile-first and responsiveness for multiple devices.<br><br>  Implemented with HTML 5, CSS 3, JavaScript, jQuery, and framework Bootstrap.", "Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap."],
+                "button2": ["Access Website", "Acesse o Website"],
+                "button3": ["Access Prototype", "Acesse o Protótipo"],
+              };
+ 
+  function traduzirEN(){
+    document.getElementById("nav").innerHTML = lang.nav[0];
+    document.getElementById("text").innerHTML = lang.text[0];
+    document.getElementById("subtitle").innerHTML = lang.subtitle[0];
+    document.getElementById("button").innerHTML = lang.button[0];
+    document.getElementById("persona_m").innerHTML = lang.persona_m[0];
+    document.getElementById("persona_f").innerHTML = lang.persona_f[0];
+    document.getElementById("journey").innerHTML = lang.journey[0];
+    document.getElementById("research").innerHTML = lang.research[0];
+    document.getElementById("res1").innerHTML = lang.res1[0];
+    document.getElementById("res2").innerHTML = lang.res2[0];
+    document.getElementById("res3").innerHTML = lang.res3[0];
+    document.getElementById("res4").innerHTML = lang.res4[0];
+    document.getElementById("res5").innerHTML = lang.res5[0];
+    document.getElementById("subtitle2").innerHTML = lang.subtitle2[0];
+    document.getElementById("text2").innerHTML = lang.text2[0];
+    document.getElementById("subtitle3").innerHTML = lang.subtitle3[0];
+    document.getElementById("text3").innerHTML = lang.text3[0];
+    document.getElementById("button2").innerHTML = lang.button2[0];
+    document.getElementById("button3").innerHTML = lang.button3[0];
+    document.getElementById("journey_en").src = "imagens/jornada_en.svg";
+  }
+  function traduzirPT(){
+     document.getElementById("nav").innerHTML = lang.nav[1];
+    document.getElementById("text").innerHTML = lang.text[1];
+    document.getElementById("subtitle").innerHTML = lang.subtitle[1];
+    document.getElementById("button").innerHTML = lang.button[1];
+    document.getElementById("persona_m").innerHTML = lang.persona_m[1];
+    document.getElementById("persona_f").innerHTML = lang.persona_f[1];
+    document.getElementById("journey").innerHTML = lang.journey[1];
+     document.getElementById("research").innerHTML = lang.research[1];
+     document.getElementById("res1").innerHTML = lang.res1[1];
+     document.getElementById("res2").innerHTML = lang.res2[1];
+     document.getElementById("res3").innerHTML = lang.res3[1];
+     document.getElementById("res4").innerHTML = lang.res4[1];
+     document.getElementById("res5").innerHTML = lang.res5[1];
+     document.getElementById("subtitle2").innerHTML = lang.subtitle2[1];
+    document.getElementById("text2").innerHTML = lang.text2[1];
+     document.getElementById("subtitle3").innerHTML = lang.subtitle3[1];
+    document.getElementById("text3").innerHTML = lang.text3[1];
+    document.getElementById("button2").innerHTML = lang.button2[1];
+    document.getElementById("button3").innerHTML = lang.button3[1];
+    document.getElementById("journey_en").src = "imagens/jornada.svg";
+  }
+  
+  
+</script>
+</body>
+</html>
