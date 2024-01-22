@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt" data-bs-theme="auto" id="monkeyplay">
+<html lang="en" data-bs-theme="auto" id="monkeyplay">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -93,7 +93,7 @@ p{
     height: auto;
   }
   .translate{
-    position: fixed;
+    position: relative;
   }
   
 }
@@ -124,14 +124,14 @@ p{
           <li class="nav-item">
             <a class="nav-link" href="#contato" id="nav">Contato</a>
           </li>
+          <li class="translate text-end">
+             <button type="button" class="btn btn-light" onclick="traduzirPT()">PT-BR</button>
+            <button type="button" class="btn btn-light" onclick="traduzirEN()">EN</button>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
-   <div class="translate d-grid gap-2 d-md-flex justify-content-md-end p-0">
-          <button type="button" class="btn btn-light" onclick="traduzirPT()">PT-BR</button>
-          <button type="button" class="btn btn-light" onclick="traduzirEN()">EN</button>
-    </div>
   <main>
     <div class="container marketing">
       <!-- SEÇÃO UX -->
