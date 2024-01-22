@@ -29,6 +29,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.translate{
+  position: fixed;
+  right: 5px;
+}
 .carousel-control-next-icon, .carousel-control-prev-icon{
   background-color: #000;
   opacity: 30%;
@@ -117,7 +121,7 @@ p{
             <a class="nav-link" href="#contato" id="nav">Contato</a>
           </li>
           <li class="translate text-end">
-             <button type="button" class="btn btn-light" onclick="traduzirPT()">PT-BR</button>
+             <button type="button" class="btn btn-light" onclick="traduzirPT()">PT</button>
             <button type="button" class="btn btn-light" onclick="traduzirEN()">EN</button>
           </li>
         </ul>
@@ -140,7 +144,7 @@ p{
      <!-- CARROSSEL UX - MONKEYPLAY -->
      <div class="row featurette py-5">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="20000">
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height:auto !important;">
           <div class="carousel-item active">
             <h2 class="text-body-secondary text-center" id="journey">Jornada do Usuário</h2>
             <img class="jornada d-block mx-auto img-fluid max-width-100"  src="imagens/jornada.svg" alt="jornada" id="journey_en">
@@ -289,7 +293,7 @@ p{
                 "res5": ["Smartphones are the most used devices to follow lyrics.", "Smartphones são o aparelhos mais ultilizados para acompanhar."],
                 "subtitle2": ["<br>Design Undergraduate Project, Federal University of Rio de Janeiro", "<br>Projeto de Graduação em Desenho Industrial, UFRJ"],
                 "text2": ["SnackTrem was conceived and designed to be a more affordable, streamlined, and aligned with the world of Internet of Things(IoT), combining technology and design. <br><br>  Inspired by the business model of automated sales within trains and high-speed trains in countries like Japan and Italy, the project utilizes automation and interaction with mobile devices to modernize the way snacks are purchased. This approach aims to reduce manufacturing costs and the dimensions of the machinery while enhancing security for the owner by eliminating the storage of cash and coins in the vending machine.", "SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas."],
-                "subtitle3": ["Theater Company", "Cia de Teatro"],
+                "subtitle3": ["<br>Theater Company", "Cia de Teatro"],
                 "text3": ["Webpage project using mobile-first and responsiveness for multiple devices.<br><br>  Implemented with HTML 5, CSS 3, JavaScript, jQuery, and framework Bootstrap.", "Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap."],
                 "button2": ["Access Website", "Acesse o Website"],
                 "button3": ["Access Prototype", "Acesse o Protótipo"],
