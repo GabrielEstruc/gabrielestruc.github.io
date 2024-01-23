@@ -98,7 +98,7 @@ p{
 }
 </style>
 </head>
-<body onload="atualizarIdade()">
+<body onload="atualizarIdade(), traduzirPT()">
   <!-- MENU DE NAVEGAÇÃO -->
   <header data-bs-theme="dark">
     <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-1">
@@ -136,8 +136,8 @@ p{
       <!-- SEÇÃO UX -->
       <div class="row featurette py-5">
         <div class="col-md-7">
-          <h2 class="text-body-primary" id="title">MonkeyPlay<span class="text-body-secondary" id="subtitle"><br> O app para músicos</span></h2>
-          <p class="lead py-2" id="text">MonkeyPlay é aquela solução que tem o propósito de oferecer formas mais dinâmicas e customizáveis de acompanhar suas músicas favoritas na hora de tocar!<br><br> Com um layout pensado para facilitar a leitura e aprendizado, monte sua biblioteca de músicas, ajuste-as de acordo com seu gosto e dê o play!</p>
+          <h2 class="text-body-primary" id="title">MonkeyPlay<span class="text-body-secondary" id="subtitle"></span></h2>
+          <p class="lead py-2" id="text"></p>
           <p><a class="btn btn-warning" href="https://www.figma.com/proto/LYdH3999zmcgteoD1rxwQr/MonkeyPlay?page-id=0%3A1&type=design&node-id=1-2&viewport=-1052%2C361%2C0.51&t=jgcVWNPAaDMMttaH-9&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank" id="button">Acesse o Protótipo</a></p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -149,7 +149,7 @@ p{
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="20000">
         <div class="carousel-inner" style="height:auto !important;">
           <div class="carousel-item active">
-            <h2 class="text-body-secondary text-center" id="journey">Jornada do Usuário</h2>
+            <h2 class="text-body-secondary text-center" id="journey"></h2>
             <img class="jornada d-block mx-auto img-fluid max-width-100"  src="imagens/jornada.svg" alt="jornada" id="journey_en">
           </div>
           <div class="carousel-item">
@@ -159,15 +159,13 @@ p{
           <div class="card-body">
             <img class="card-img-top" src="imagens/persona_m.svg" alt="personas">
 
-          <p class="text-center lead py-2" id="persona_m"><strong>Bruno, 35</strong><br><br>"É casado e tem dois filhos pequenos. Costumava tocar violão quando jovem, mas ultimamente anda muito cansado devido ao trabalho. Hoje em dia a paixão adormecida tem voltado e agora quer praticar mais e melhorar suas habilidades no violão.”</p>
+          <p class="text-center lead py-2" id="persona_m"></p>
           </div>
           </div>
           <div class="card border-0 text-center col-md-6 col-sm-12">
           <div class="card-body">
             <img class="card-img-top" src="imagens/persona_f.svg" alt="personas">
-            <p class="text-center lead py-2" id="persona_f"><strong>
-            Luiza, 27</strong><br><br> “Luiza mora sozinha. Nas horas vagas passa bastante tempo no celular.
-            Tem se sentido muito estressada ultimamente. Decide iniciar atividades que melhorassem sua saúde física e mental. Começa a buscar formas de aprender a tocar.” 
+            <p class="text-center lead py-2" id="persona_f"> 
             </p>
           </div>
         </div>
@@ -183,13 +181,13 @@ p{
       </div>
       <!-- DADOS DIVIDIDOS EM 5 COLUNAS EM CARDS UX - MONKEYPLAY -->
       <div class="row featurette py-5">
-        <h2 class="text-body-secondary text-center" id="research">Pesquisa</h2>
+        <h2 class="text-body-secondary text-center" id="research"></h2>
         <div class="col-sm w-20">
 
          <div class="card border-0 text-center">
           <div class="card-body">
             <img class="card-img-top" src="imagens/Account.svg" alt="Card image cap">
-            <p class="text-center lead py-2" style="font-size: 15px;" id="res1">61% do público é 30+</p>
+            <p class="text-center lead py-2" style="font-size: 15px;" id="res1"></p>
           </div>
         </div>
       </div>
@@ -197,7 +195,7 @@ p{
         <div class="card border-0 text-center">
           <div class="card-body">
             <img class="card-img-top" src="imagens/Guitar.svg" alt="Card image cap">
-            <p class="text-center lead py-2"  style="font-size: 15px;" id="res2">Violão e guitarra são citados o dobro, comparados a outros instrumentos.</p>
+            <p class="text-center lead py-2"  style="font-size: 15px;" id="res2"></p>
           </div>
         </div>
       </div>
@@ -205,7 +203,7 @@ p{
         <div class="card border-0 text-center">
           <div class="card-body">
            <img class="card-img-top" src="imagens/Jump.svg" alt="Card image cap">
-           <p class="text-center lead py-2" style="font-size: 15px;" id="res3">73% utilizam como hobby/prazer, seguidos de 21% por prática e 6% profissionalmente.</p>
+           <p class="text-center lead py-2" style="font-size: 15px;" id="res3"></p>
          </div>
        </div>
      </div>
@@ -213,7 +211,7 @@ p{
       <div class="card border-0 text-center">
         <div class="card-body">
           <img class="card-img-top" src="imagens/Book.svg" alt="Card image cap">
-          <p class="text-center lead py-2"  style="font-size: 15px;" id="res4">88% tem interesse em aprender do zero ou melhorar.</p>
+          <p class="text-center lead py-2"  style="font-size: 15px;" id="res4"></p>
         </div>
       </div>
     </div>
@@ -221,7 +219,7 @@ p{
       <div class="card border-0 text-center w-20">
         <div class="card-body">
           <img class="card-img-top" src="imagens/Smartphones.svg" alt="Card image cap">
-          <p class="text-center lead py-2"  style="font-size: 15px;" id="res5">Smartphones são o aparelhos mais ultilizados para acompanhar.</p>
+          <p class="text-center lead py-2"  style="font-size: 15px;" id="res5"></p>
         </div>
       </div>
     </div>
@@ -234,8 +232,8 @@ p{
      <div class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
    </div>
    <div class="col-md-6">
-    <h2 class="text-body-primary">SnackTrem [App Redesign]<span class="text-body-secondary" id="subtitle2" ><br>Projeto de Graduação em Desenho Industrial, UFRJ</span></h2>
-    <p class="lead py-2" id="text2">SnackTrem foi idealizado e projetado para ser uma solução de vending machine mais barata, enxuta e contemporânea ao mundo da IoT (Internet of Things), aliando tecnologia e design. <br><br> Inspirado no modelo de negócio de vendas automatizadas dentro de trens e trens-bala de países como Japão e Itália, o projeto utiliza os recursos da automação e interação com os dispositivos móveis para modernizar a forma de comprar snacks e reduzir os custos de fabricação e dimensões do maquinário, bem como aumentar a segurança para o proprietário retirando da máquina a armazenagem de cédulas e moedas.</p>
+    <h2 class="text-body-primary">SnackTrem [App Redesign]<span class="text-body-secondary" id="subtitle2" ></span></h2>
+    <p class="lead py-2" id="text2"></p>
     <p><a class="btn btn-warning" href="https://www.figma.com/proto/xUaAl9KrNc84CIpIb236Iv/Redesign-SnackTrem?page-id=0%3A1&type=design&node-id=1-2&viewport=203%2C401%2C0.3&t=FognDsOF4dS7jfcn-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design" target="_blank" id="button3">Acesse o Protótipo</a></p>
   </div>
 </div>
@@ -243,9 +241,9 @@ p{
 <!-- SEÇÃO FRONT-END -->
 <div class="row featurette" >
   <div class="col-md-6 order-md-2">
-    <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary" id="subtitle3"><br>Cia de Teatro</span></h2>
-    <p class="lead" id="text3">Projeto de webpage utilizando o método de mobile first e responsividade para os diversos dispositivos da atualidade.<br><br> Através do uso de HTML 5, CSS 3, JavaScript, Jquery e a framework Bootstrap.</p>
-    <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank" id="button2">Acesse o Website</a></p></div>
+    <h2 class="text-body-primary">Black Moon Theater<span class="text-body-secondary" id="subtitle3"></span></h2>
+    <p class="lead" id="text3"></p>
+    <p id="website" style="text-align: right;"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank" id="button2"></a></p></div>
     <div class="col-md-6 order-md-1">
      <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
    </div>
