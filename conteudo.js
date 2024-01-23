@@ -19,13 +19,13 @@ const lang = {
           };
 
 function traduzirEN(){
-  for(var i = 0; i<=18; i++){
+  for(var i = 0; i<lang.en.length; i++){
     document.getElementById("#" + i).innerHTML = lang.en[i];
   }
   document.getElementById("journey").src = "imagens/jornada_en.svg";
 }
 function traduzirPT(){
- for(var i = 0; i<=18; i++){
+ for(var i = 0; i<lang.pt.length; i++){
     document.getElementById("#" + i).innerHTML = lang.pt[i];
   }
     document.getElementById("journey").src = "imagens/jornada.svg";
