@@ -40,6 +40,7 @@ document.getElementById("idade").innerHTML = " " + idade + ".";
     }
 
     function abrirPrototipoSnack(){
+      const largura = window.innerWidth;
       if (protSnack.childElementCount <= 1 & largura >= 768){
       document.getElementById("tela2").style = "display: none";
       var prot = document.createElement("iframe");
