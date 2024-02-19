@@ -53,7 +53,15 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  animation: color-change 2s linear infinite;
 }
+
+@keyframes color-change {
+  0% { color: #fff; }
+  50% { color: #000; }
+  100% { color: #fff; }
+  }
+
 .carousel-control-next-icon, .carousel-control-prev-icon{
   background-color: #000;
   opacity: 30%;
@@ -65,6 +73,7 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  animation: color-change 2s linear infinite;
 }
 .site{
   width: auto;
