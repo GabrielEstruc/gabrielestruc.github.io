@@ -37,7 +37,7 @@ iframe{
 .tela{
   width: 500px;
   height: 500px;
-  background-image: url("imagens/tela.png");
+  background-image: url("../imagens/tela.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,7 +57,7 @@ iframe{
 .tela2{
   width: 500px;
   height: 500px;
-  background-image: url("imagens/snacktrem.png");
+  background-image: url("../imagens/snacktrem.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -65,19 +65,12 @@ iframe{
 }
 .site{
   height: 300px;
-  background-image: url("imagens/moon.svg");
+  background-image: url("../imagens/moon.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.perfil{
-  background-image: url("imagens/perfil.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-  width: 100px;
-}
+
 p{
   text-align: justify;
 }
