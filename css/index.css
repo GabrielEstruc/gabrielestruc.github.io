@@ -44,20 +44,10 @@ iframe{
   animation: color-change 2s linear 15;
 }
 
-@keyframes color-change {
-  0% { color: #fff; }
-  50% { color: #000; }
-  100% { color: #fff; }
-  }
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-  background-color: #000;
-  opacity: 30%;
-}
 .tela2{
   width: 500px;
   height: 500px;
-  background-image: url("../imagens/snacktrem.png");
+  background-image: url("../imagens/tela.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,6 +59,17 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@keyframes color-change {
+  0% { color: #fff; }
+  50% { color: #000; }
+  100% { color: #fff; }
+  }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000;
+  opacity: 30%;
 }
 
 p{
