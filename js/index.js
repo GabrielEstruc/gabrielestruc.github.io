@@ -11,6 +11,9 @@ function traduzirPT(){
     document.getElementById("journey").src = "imagens/jornada.svg";
 }
 
+const l = navigator.language.toLowerCase();
+const loadLang = () => l.includes("pt")?traduzirPT():traduzirEN();
+ 
 var data = new Date();
 var nasc = 1994;
 var ano = data.getFullYear();
@@ -27,14 +30,14 @@ document.getElementById("idade").innerHTML = " " + idade + ".";
 
   function abrirPrototipoMonkey(){
     const largura = window.innerWidth;
-    if (protMonkey.childElementCount <= 1 & largura >= 768){
+    if (protMonkey.childElementCount <= 1 & largura >= 991){
       document.getElementById("tela").innerHTML = "loading...";
-      document.getElementById("tela").style = " background-image: url('');position: absolute;text-align:center; line-height: 500px; z-index: -1; font-weight: bold;";
+      document.getElementById("tela").style = " background-image: url('');position: absolute;text-align: center; line-height: 500px; z-index: -1;"
       var prot = document.createElement("iframe");
       prot.setAttribute("allowfullscreen", "true");
       prot.setAttribute("src","https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLYdH3999zmcgteoD1rxwQr%2FMonkeyPlay%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D67%252C434%252C0.23%26t%3DLNfQ7YTvTUsNjGYP-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign")
       document.getElementById("protMonkey").appendChild(prot);
-    } if(largura < 768){
+    } if(largura < 991){
       window.open('https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLYdH3999zmcgteoD1rxwQr%2FMonkeyPlay%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D67%252C434%252C0.23%26t%3DLNfQ7YTvTUsNjGYP-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign');
     }
     
@@ -42,14 +45,14 @@ document.getElementById("idade").innerHTML = " " + idade + ".";
 
     function abrirPrototipoSnack(){
       const largura = window.innerWidth;
-      if (protSnack.childElementCount <= 1 & largura >= 768){
+      if (protSnack.childElementCount <= 1 & largura >= 991){
       document.getElementById("tela2").innerHTML = "loading...";
-      document.getElementById("tela2").style = " background-image: url('');position: absolute;text-align:center; line-height: 500px; z-index: -1; font-weight: bold;";
+      document.getElementById("tela2").style = " background-image: url('');position: absolute;text-align: center; line-height: 500px; z-index: -1;"
       var prot = document.createElement("iframe");
       prot.setAttribute("src","https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxUaAl9KrNc84CIpIb236Iv%2FRedesign-SnackTrem%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D289%252C295%252C0.26%26t%3DZ1dCYviAZ64qQeQn-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign")
       prot.setAttribute("allowfullscreen", "true");
       document.getElementById("protSnack").appendChild(prot);
-      } if(largura < 768){
+      } if(largura < 991){
         window.open('https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxUaAl9KrNc84CIpIb236Iv%2FRedesign-SnackTrem%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D289%252C295%252C0.26%26t%3DZ1dCYviAZ64qQeQn-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign')
       }
     }
