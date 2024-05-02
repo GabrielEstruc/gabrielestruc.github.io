@@ -5,119 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="my portfolio">
 <title>Gabriel Estruc | Portfólio</title>
+<!-- ÍCONE -->
 <link rel="shortcut icon" type="image/x-icon" href="imagens/logoico.ico">
+<!-- CONEXÃO COM A FOLHA DE ESTILO CSS -->
+<link rel="stylesheet" href="css/index.css">
+<!-- CONOEXÃO COM A BIBLIOTECA BOOTSTRAP -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script type="text/javascript" src="conteudo.json"></script>
-<script type="text/javascript" src="index.js"></script>
+<!-- CONEXÃO COM O CONTEÚDO EM JSON EM PT E EN -->
+<script type="text/javascript" src="json/conteudo.json"></script>
+<!-- CONEXÃO COM AS INTERAÇÕES EM JAVASCRIPT -->
+<script type="text/javascript" src="js/index.js"></script>
+<!-- CONEXÃO COM AS INTERAÇÕES EM JQUERY -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!-- ESTILOS - GERAL -->
-<style>
-
-  html{
-   scroll-behavior: smooth;
- }
- .card-img-top{
-  max-width: 100px;
-}
-img{
-  max-height: 500px;
-}
-iframe{
-  width: 100%;
-  height: 650px;
-  margin: 0px auto;
-}
-.persona{
-  max-height: 450px;
-}
-.translate{
-    position: fixed;
-    right: 5px;
-  }
-.tela{
-  width: 500px;
-  height: 500px;
-  background-image: url("imagens/tela.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: color-change 2s linear 15;
-}
-
-@keyframes color-change {
-  0% { color: #fff; }
-  50% { color: #000; }
-  100% { color: #fff; }
-  }
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-  background-color: #000;
-  opacity: 30%;
-}
-.tela2{
-  width: 500px;
-  height: 500px;
-  background-image: url("imagens/snacktrem.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  animation: color-change 2s linear infinite;
-}
-.site{
-  width: auto;
-  height: 500px;
-  background-image: url("imagens/moon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.perfil{
-  background-image: url("imagens/perfil.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100px;
-  width: 100px;
-}
-p{
-  text-align: justify;
-}
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-/*ESTILO PARA TELA PEQUENA*/
-@media (max-width: 768px){
- 
-  main{
-    margin: 0px 5px;
-  }
-  p{
-    font-size: 18px !important;
-  }
-  .site, .tela{
-    display: none;
-  }
-  #website{
-    text-align: left !important;
-  }
-  .carousel-item{
-    height: auto;
-  }
-  .translate{
-    position: relative;
-  }
-  
-}
-</style>
 </head>
-<body onload="atualizarIdade(), traduzirEN()">
+
+<body onload="loadLang()">
   <!-- MENU DE NAVEGAÇÃO -->
   <header data-bs-theme="dark">
     <nav class="navbar-expand-lg navbar navbar-dark bg-dark fixed-top p-2">
@@ -142,7 +47,7 @@ p{
           <li class="nav-item">
             <a class="nav-link" href="#contato" id="#0"></a>
           </li>
-          <li class="translate text-end">
+           <li class="translate text-end ">
              <button type="button" class="btn btn-dark" onclick="traduzirPT()">
                <img src="imagens/br.png" height="24px" alt="PT">
              </button>
@@ -158,18 +63,18 @@ p{
     <div class="container marketing my-md-4">
       <!-- SEÇÃO UX -->
       <div class="row featurette py-5">
-        <div class="col-md-6 py-4">
+        <div class="col-md-12 col-lg-6 py-4">
           <h2 class="text-body-primary" id="title">MonkeyPlay<span class="text-body-secondary" id="#1"></span></h2>
           <p class="lead py-2" id="#2"></p>
           <p><a class="btn btn-warning" onclick="abrirPrototipoMonkey()" id="#3"></a></p>
         </div>
-        <div id="protMonkey" class="col-md-6 order-md-1 py-4">
-          <div class="tela" id="tela"></div>
+        <div id="protMonkey" class="col-md-12 col-lg-6 order-md-1 py-4">
+         <div class="tela" id="tela"></div>
        </div>
      </div>
      <!-- CARROSSEL UX - MONKEYPLAY -->
      <div class="row featurette">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="20000">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" pause="hover" data-interval="60000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <h2 class="text-body-secondary text-center" id="#6"></h2>
@@ -180,14 +85,14 @@ p{
             <div class="row">
             <div class="card border-0 text-center col-md-6 col-sm-12">
           <div class="card-body">
-            <img class="card-img-top persona" src="imagens/persona_m.svg" alt="personas">
+            <img class="persona" src="imagens/persona_m.png" alt="persona_m">
 
           <p class="text-center lead py-2"  id="#4"></p>
           </div>
           </div>
           <div class="card border-0 text-center col-md-6 col-sm-12">
           <div class="card-body">
-            <img class="card-img-top persona" src="imagens/persona_f.svg" alt="personas">
+            <img class="persona" src="imagens/persona_f.png" alt="persona_f">
             <p class="text-center lead py-2" id="#5"></p>
           </div>
         </div>
@@ -250,10 +155,10 @@ p{
    <hr class="featurette-divider" id="snacktrem">
    <!-- SEÇÃO UX - SNACKTREM -->
    <div class="row featurette py-5">
-    <div id="protSnack" class="col-md-6 order-md-1">
-     <div id="tela2" class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+    <div id="protSnack" class="col-md-12 col-lg-6 order-md-1">
+     <div id="tela2" class="tela2 bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto"></div>
     </div>
-   <div class="col-md-6">
+   <div class="col-md-12 col-lg-6">
     <h2 class="text-body-primary">SnackTrem [App Redesign]<span class="text-body-secondary" id="#13" ></span></h2>
     <p class="lead py-2" id="#14"></p>
     <p><a class="btn btn-warning" onclick="abrirPrototipoSnack()" id="#18"></a></p>
@@ -261,24 +166,22 @@ p{
 </div>
 <hr class="featurette-divider" id="front">
 <!-- SEÇÃO FRONT-END -->
-<div class="row featurette py-5">
-  <div class="col-md-6 order-md-2">
-    <h2 class="text-body-primary text-sm-start text-md-end">Black Moon Theater<span class="text-body-secondary" id="#15"></span></h2>
+<div class="row featurette ">
+  <div class="col-md-12 col-lg-6 order-md-2 py-5">
+    <h2 class="text-body-primary text-md-start text-lg-end">Black Moon Theater<span class="text-body-secondary" id="#15"></span></h2>
     <p class="lead" id="#16"></p>
-    <p class="text-sm-start text-md-end"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank" id="#17"></a></p></div>
-    <div class="col-md-6 order-md-1">
-     <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"></div>
+    <p class="text-md-start text-lg-end"><a class="btn btn-warning" href="https://bmtciadeteatro.000webhostapp.com/" target="_blank" id="#17"></a></p></div>
+    <div class="col-md-12 col-lg-6 order-md-1">
+     <div class="site bd-placeholder-img bd-placeholder-img-lg featurette-image my-5 mx-auto"></div>
    </div>
  </div>
- <hr class="featurette-divider"  id="contato">
+</main>
  <!-- FOOTER - CONTATOS -->
-<footer class="container py-4 row">
-   <div class="col-lg-12 col-sm-12 mx-auto">
-    <div class="perfil bd-placeholder-img mx-auto rounded-circle"></div>
-    <h2 class="fw-normal py-3 text-center">Gabriel Estruc,<spam id="idade"></spam></h2>
-    <p style="text-align:center;"><a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-dark mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a></p>
+<footer class="h-auto bg-dark py-3 mx-auto justify-content-around row text-white w-100" id="contato">
+   <div class="col-lg-6 col-md-6 col-sm-12 text-center p-2">tel.: +55 (21) 99704-1563<br>email: gestrucso@gmail.com</div>
+   <div class="col-lg-6 col-md-6 col-sm-12 text-center p-2">
+    <a class="btn btn-primary mx-1" href="https://www.linkedin.com/in/gabriel-estruc/" target="_blank">LinkedIn</a><a class="btn btn-light mx-1" href="https://github.com/GabrielEstruc" target="_blank">GitHub</a>
   </div>
 </footer>
-</main>
 </body>
 </html>

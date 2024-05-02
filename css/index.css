@@ -1,0 +1,124 @@
+/* FOLHA DE ESTILO CSS DA PÁGINA INDEX */
+  html{
+   scroll-behavior: smooth;
+ }
+
+img{
+  max-height: 500px;
+  width: 100%;
+}
+iframe{
+  width: 100%;
+  height: 650px;
+  margin: 0px auto;
+}
+
+.translate{
+    position: fixed;
+    right: 5px;
+  }
+
+  .carousel-item{
+    height: 500px;
+  }
+
+.persona{
+  height: 200px;
+  width: auto;
+  padding: 10px;
+}
+
+.card-img-top{
+  height: 60px;
+  width: auto;
+}
+
+.tela{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/tela.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: color-change 2s linear 15;
+}
+
+@keyframes color-change {
+  0% { color: #fff; }
+  50% { color: #000; }
+  100% { color: #fff; }
+  }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000;
+  opacity: 30%;
+}
+.tela2{
+  width: 500px;
+  height: 500px;
+  background-image: url("imagens/snacktrem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: color-change 2s linear 15;
+}
+.site{
+  height: 300px;
+  background-image: url("imagens/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.perfil{
+  background-image: url("imagens/perfil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+p{
+  text-align: justify;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+/*ESTILO A PARTIR DE TELA MÉDIA*/
+@media (max-width: 991px){
+
+   .translate{
+    position: relative !important;
+  }
+  
+  .site, .tela, .tela2{
+    display: none;
+  }
+}
+
+/*ESTILO A PARTIR DE TELA PEQUENA*/
+@media (max-width: 768px){
+
+  p{
+    font-size: 18px !important;
+  }
+  
+  .btn-warning{
+      padding: 10px;
+      margin-top: 5px;
+      width: 100%;
+  }
+  #website{
+    text-align: left !important;
+  }
+  .carousel-item{
+    height: auto !important;
+  }
+ 
+  
+}
