@@ -41,7 +41,6 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation: color-change 2s linear 15;
 }
 
 .tela2{
@@ -51,7 +50,6 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  animation: color-change 2s linear 15;
 }
 .site{
   height: 300px;

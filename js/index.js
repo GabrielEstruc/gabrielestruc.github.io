@@ -32,7 +32,7 @@ document.getElementById("idade").innerHTML = " " + idade + ".";
     const largura = window.innerWidth;
     if (protMonkey.childElementCount <= 1 & largura >= 991){
       document.getElementById("tela").innerHTML = "loading...";
-      document.getElementById("tela").style = " background-image: url('');position: absolute;text-align: center; line-height: 500px; z-index: -1;"
+      document.getElementById("tela").style = " background-image: url('');  animation: color-change 2s linear 15;position: absolute;text-align: center; line-height: 500px; z-index: -1;"
       var prot = document.createElement("iframe");
       prot.setAttribute("allowfullscreen", "true");
       prot.setAttribute("src","https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLYdH3999zmcgteoD1rxwQr%2FMonkeyPlay%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D67%252C434%252C0.23%26t%3DLNfQ7YTvTUsNjGYP-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign")
@@ -47,7 +47,7 @@ document.getElementById("idade").innerHTML = " " + idade + ".";
       const largura = window.innerWidth;
       if (protSnack.childElementCount <= 1 & largura >= 991){
       document.getElementById("tela2").innerHTML = "loading...";
-      document.getElementById("tela2").style = " background-image: url('');position: absolute;text-align: center; line-height: 500px; z-index: -1;"
+      document.getElementById("tela2").style = " background-image: url('');  animation: color-change 2s linear 15;position: absolute;text-align: center; line-height: 500px; z-index: -1;"
       var prot = document.createElement("iframe");
       prot.setAttribute("src","https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxUaAl9KrNc84CIpIb236Iv%2FRedesign-SnackTrem%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D289%252C295%252C0.26%26t%3DZ1dCYviAZ64qQeQn-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26mode%3Ddesign")
       prot.setAttribute("allowfullscreen", "true");
