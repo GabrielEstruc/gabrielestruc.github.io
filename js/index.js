@@ -2,34 +2,49 @@
 var btnEN = 0
 var btnPT = 0
 
-//Função para carregar conteúdo em inglês e a imagem de acordo com a dimensão do display
+//Funções para carregar o conteúdo de imagem de aconrdo com a dimensão do display
+function resizeEN(){
+ const largura = window.innerWidth
+ if (largura<=768){
+    document.getElementById("journey").src = "imagens/jornada_en_mobile.svg"
+}  else {
+    document.getElementById("journey").src = "imagens/jornada_en.svg"
+} 
+}
+
+function resizePT(){
+  const largura = window.innerWidth
+  if (largura<=768){
+    document.getElementById("journey").src = "imagens/jornada_mobile.svg"
+}  else {
+    document.getElementById("journey").src = "imagens/jornada.svg"
+}
+}
+
+//Função para carregar conteúdo em inglês e a imagem de acordo com a dimensão do display. Chama as funções anteriores de carregamento de conteúdo.
 function traduzirEN(){
  btnEN = 1
  btnPT = 0
+ document.getElementById("btnen").classList.add("active");
+ document.getElementById("btnpt").classList.remove("active");
  const largura = window.innerWidth;
  for(var i = 0; i<lang.en.length; i++){
   document.getElementById("#" + i).innerHTML = lang.en[i];
  }
- if (largura <= 768){
-  document.getElementById("journey").src = "imagens/jornada_en_mobile.svg";
- } else {
-  document.getElementById("journey").src = "imagens/jornada_en.svg";
- }
+ resizeEN()
 }
 
-//Função para carregar conteúdo em português e a imagem de acordo com a dimensão do display
+//Função para carregar conteúdo em português e a imagem de acordo com a dimensão do display. Chama as funções anteriores de carregamento de conteúdo.
 function traduzirPT(){
  btnEN = 0
  btnPT = 1
+ document.getElementById("btnpt").classList.add("active");
+ document.getElementById("btnen").classList.remove("active");
  const largura = window.innerWidth;
  for(var i = 0; i<lang.pt.length; i++){
   document.getElementById("#" + i).innerHTML = lang.pt[i];
  }
- if (largura <= 768){
-  document.getElementById("journey").src = "imagens/jornada_mobile.svg";
- } else {
-  document.getElementById("journey").src = "imagens/jornada.svg";
- }
+ resizePT()
 }
 
 //Constante que verifica e armazena o idioma atual do navegador
@@ -39,7 +54,7 @@ const l = navigator.language.toLowerCase();
 const loadLang = () => l.includes("pt")?traduzirPT():traduzirEN();
 
 //Função para carregar o conteúdo de acordo com as dimensões do display. Chama as funções anteriores de carregamento de conteúdo. Opções: inglês ou português
-const resizeIMG = () => btnEN === 1?traduzirEN():traduzirPT(); 
+const resizeIMG = () => btnEN === 1?resizeEN():resizePT(); 
 
 // Função para abrir o protótipo do figma. Para dispositivos grandes a tela mostra um feedback de carregamento e depois carrega um novo elemento iframe. Possui tratamento para não haver duplicações. Em displays pequenos, abre o link em uma nova aba.  
 function abrirPrototipoMonkey(){
